@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  border: 2px solid black;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 10px;
+  width: 100%;
+  border: 3px solid black;
+  background-color: rgb(0, 195, 255);
+}
+.container div {
+  border: 2px solid black;
+}
+.profile {
+  border: 3px solid black;
+  background-color: rgb(32, 133, 32);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile img {
+  width: 100%;
+  background-color: white;
+  border-bottom: 3px solid black;
+}
+
+.profile p {
+  padding: 10px;
+  font-size: x-large;
+}
+
+.side-align .row {
+  height: 50%;
+}
+
+.center-aligned {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.top-center {
+  background-color: rgb(32, 133, 32);
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  height: 50%;
+}
+
+.bottom .col-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.top-left {
+  background-color: yellow;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bottom-cen {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+.bottom-right {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
