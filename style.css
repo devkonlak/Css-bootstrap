@@ -3,13 +3,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
   background-color: aquamarine;
   border: 2px solid black;
   font-family: "Poppins", sans-serif;
+  font-size: x-large;
 }
 
 .container {
@@ -23,69 +24,60 @@ body {
 }
 .profile {
   border: 3px solid black;
-  background-color: rgb(32, 133, 32);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  background-color: white;
 }
 
 .profile img {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 50%;
   background-color: white;
   border-bottom: 3px solid black;
 }
 
 .profile p {
+  background-color: rgb(32, 133, 32);
   padding: 10px;
   font-size: x-large;
+  display: flex;
+  justify-content: center;
 }
 
-.side-align .row {
-  height: 50%;
+.side-align {
+  height: 100vh;
+  display: grid;
 }
-
+.center {
+  height: 40vh;
+}
 .center-aligned {
   background-color: yellow;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
-  height: 50%;
 }
-
 .top-center {
-  background-color: rgb(32, 133, 32);
-  display: flex;
+  background-color: green;
+  display: grid;
   justify-content: center;
   align-items: top;
-  height: 50%;
 }
-
-.bottom .col-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.bottom {
+  height: 60vh;
 }
-
 .top-left {
   background-color: yellow;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
-
 .bottom-cen {
-  background-color: blueviolet;
-  display: flex;
+  background-color: purple;
+  color: yellow;
+  display: grid;
   justify-content: center;
-  align-items: left;
+  align-items: end;
 }
-
 .bottom-right {
   background-color: yellow;
-  display: flex;
-  justify-content: center;
-  align-items: left;
+  display: grid;
+  justify-content: right;
+  align-items: end;
 }
