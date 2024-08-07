@@ -1,83 +1,143 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
+html,
 body {
-  background-color: aquamarine;
-  border: 2px solid black;
-  font-family: "Poppins", sans-serif;
-  font-size: x-large;
+  height: 100%;
+}
+
+.one {
+  background-color: #b5cfb7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.two {
+  background-color: #36c2ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 95%;
+  border: 3px solid black;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
-  padding: 10px;
+  border: 3px solid black;
+  height: calc(84vh - 6px); /* Subtracting the border width */
   width: 100%;
-  border: 3px solid black;
-  background-color: rgb(0, 195, 255);
+  padding: 0;
+  margin: 0;
 }
-.container div {
+
+/* Remove padding from the Bootstrap columns */
+.row,
+.col-md-4 {
+  padding: 0;
+  margin: 0;
+}
+
+#box-profile,
+#box-ProfileName,
+#box2,
+#box3,
+#box5,
+#box6,
+#box7 {
   border: 2px solid black;
-}
-.profile {
-  border: 3px solid black;
-  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
-.profile img {
-  width: 100vw;
-  height: 100vh;
-  border-radius: 50%;
-  background-color: white;
-  border-bottom: 3px solid black;
-}
-
-.profile p {
-  background-color: rgb(32, 133, 32);
-  padding: 10px;
-  font-size: x-large;
+#box-profile {
+  height: calc(73.5vh - 4px); /* Subtracting the border width */
   display: flex;
-  justify-content: center;
-}
-
-.side-align {
-  height: 100vh;
-  display: grid;
-}
-.center {
-  height: 40vh;
-}
-.center-aligned {
-  background-color: yellow;
-  display: grid;
   justify-content: center;
   align-items: center;
 }
-.top-center {
-  background-color: green;
-  display: grid;
+
+.Profilepic img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#box-ProfileName {
+  height: calc(10vh - 4px);
+  width: 100%;
+}
+
+#box2,
+#box3 {
+  height: calc(20vh - 4px);
+  width: 100%;
+}
+
+#box5,
+#box6,
+#box7 {
+  height: calc(44vh - 4px);
+  width: 100%;
+}
+
+.Profilepic {
+  background-color: white;
+  width: 100%;
+}
+
+.ProfileName {
+  background-color: #219c90;
+  display: flex;
   justify-content: center;
-  align-items: top;
+  align-items: center;
 }
-.bottom {
-  height: 60vh;
-}
-.top-left {
+
+.CenterAligned {
   background-color: yellow;
-}
-.bottom-cen {
-  background-color: purple;
-  color: yellow;
-  display: grid;
+  display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
+  width: 100%;
 }
-.bottom-right {
+
+.TopCenterAligned {
+  background-color: #219c90;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.TopLeft {
   background-color: yellow;
-  display: grid;
-  justify-content: right;
-  align-items: end;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.Bottom {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.BottomRight {
+  background-color: yellow;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
 }

@@ -13,33 +13,31 @@
     <title>Profile Layout</title>
   </head>
   <body>
-    <div class="container">
-      <!-- main container -->
-      <div class="row row-cols-2">
-        <div class="col-4 profile">
-          <img src="/images.png" alt="" class="img-fluid" />
-          <p>Profile Name</p>
-        </div>
-        <div class="col-8 side-align">
-          <!-- container for side -->
-          <div class="row center">
-            <div class="col-12 center-aligned">
-              <p>Center Aligned</p>
+    <div class="one">
+      <div class="two">
+        <div class="container">
+          <!-- main container -->
+          <div class="row">
+            <div class="col-md-6">
+              <div id="box-profile" class="Profilepic">
+                <img src="./img.jpg" alt="" />
+              </div>
+              <div id="box-ProfileName" class="ProfileName">Profile Name</div>
             </div>
-            <div class="col-12 top-center">
-              <p>Top Center Aligned</p>
-            </div>
-          </div>
-          <div class="row bottom">
-            <!-- container for bottom -->
-            <div class="col-4 top-left">
-              <p>Top Left</p>
-            </div>
-            <div class="col-4 bottom-cen">
-              <p>Bottom</p>
-            </div>
-            <div class="col-4 bottom-right">
-              <p>Bottom Right</p>
+            <div class="col-md-6">
+              <div id="box2" class="CenterAligned">Center Aligned</div>
+              <div id="box3" class="TopCenterAligned">Top Center Aligned</div>
+              <div class="row" id="box-row">
+                <div class="col-md-4">
+                  <div id="box5" class="TopLeft">Top Left</div>
+                </div>
+                <div class="col-md-4">
+                  <div id="box6" class="Bottom">Bottom</div>
+                </div>
+                <div class="col-md-4">
+                  <div id="box7" class="BottomRight">Bottom Right</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
